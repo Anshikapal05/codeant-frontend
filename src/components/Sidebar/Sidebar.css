@@ -8,10 +8,9 @@
   flex-direction: column;
   justify-content: space-between; /* Space between top and bottom lists */
   position: fixed;
-  top: 50px; /* Ensure it starts below the navbar */
+  top: 55px; /* Ensure it starts below the navbar */
   left: 0;
   overflow-y: auto;
-  box-shadow: 2px 0 5px rgba(155, 155, 155, 0.1);
 }
 .profile-dropdown select {
   padding: 0.5rem;
