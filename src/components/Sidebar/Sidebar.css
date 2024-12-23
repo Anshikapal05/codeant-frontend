@@ -1,0 +1,64 @@
+/* Sidebar styles */
+.sidebar {
+  width: 200px;
+  height: calc(100vh - 60px); /* Full height minus navbar height */
+  background-color: #f8f8f8;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Space between top and bottom lists */
+  position: fixed;
+  top: 50px; /* Ensure it starts below the navbar */
+  left: 0;
+  overflow-y: auto;
+  box-shadow: 2px 0 5px rgba(155, 155, 155, 0.1);
+}
+.profile-dropdown select {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+}
+/* Common list styles */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  margin: 0.4rem 0;
+  font-size: 1rem;
+  color: #333;
+  cursor: pointer;
+  border-radius: 4px; /* Rounded corners */
+  transition: background-color 0.3s, color 0.3s;
+  gap: 10px;
+}
+
+.sidebar ul li:hover {
+  background-color: #007bff; /* Blue hover background */
+  color: white;
+}
+
+.sidebar ul li .icon {
+  margin: 10px;
+  font-size: 1.2rem;
+  color: #007bff; /* Icon default color */
+}
+
+.sidebar ul li:hover .icon {
+  color: white; /* Icon color changes on hover */
+}
+
+/* Top list grows to fill remaining space */
+.top-list {
+  flex-grow: 1;
+}
+
+/* Bottom list stays at the bottom */
+.bottom-list {
+  margin-top: auto; /* Pushes the list to the bottom */
+}

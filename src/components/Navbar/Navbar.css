@@ -1,0 +1,38 @@
+/* Navbar.css */
+/* Navbar.css */
+.navbar {
+  width: 200px;
+  height: 60px; /* Fixed navbar height */
+  background-color: #f8f8f8;
+  color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  position: fixed; /* Navbar stays fixed at the top */
+  top: 0;
+  left: 0;
+  box-shadow: 1px 0 0 rgba(155, 155, 155, 0.1);
+  z-index: 1000; /* Ensure it appears above the sidebar */
+}
+
+  
+  
+
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  width: 55px; /* Adjust size as needed */
+  height: auto;
+  margin-right: 5px; /* Space between logo and text */
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  /* font-weight: bold; */
+}
+
+  

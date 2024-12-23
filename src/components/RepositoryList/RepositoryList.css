@@ -1,0 +1,31 @@
+/* RepositoryList.css */
+.repository-list {
+    margin-left: 220px;
+    padding: 2rem;
+  }
+  
+  .repository-item {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  .repository-item h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .repository-item .public {
+    background-color: #d4f4dd;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+  }
+  
+  .repository-item .private {
+    background-color: #f4d4d4;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+  }
+  
