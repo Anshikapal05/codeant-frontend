@@ -18,7 +18,11 @@ function RepositoryList() {
   return (
     <div className="repository-list-container">
       <div className="repository-header">
-        <h2>Repositories</h2>
+        <div className="header-one">
+          <h2>Repositories</h2>
+          <p className="total-repositories">{repositories.length} total repositories</p>
+        </div>
+        
         <div className="header-actions">
           <button className="refresh-btn">
             <FontAwesomeIcon icon={faRefresh} className="btn-icon" />
@@ -30,7 +34,7 @@ function RepositoryList() {
           </button>
         </div>
       </div>
-      <p className="total-repositories">Total Repositories: {repositories.length}</p>
+      
       <div className="search-area">
         <FontAwesomeIcon icon="search" className="search-icon" />
         <input
@@ -50,7 +54,10 @@ function RepositoryList() {
               <span className="repo-lang">
                 {repo.lang} <span className="lang-dot"></span>
               </span>
-              <FontAwesomeIcon icon={faDatabase} className="repo-icon" /> {repo.size}
+              <span className="repo-size">
+                <FontAwesomeIcon icon={faDatabase} className="repo-icon" /> {repo.size}
+              </span>
+              
               <span className="repo-time">
                 Updated {repo.updated}
               </span>

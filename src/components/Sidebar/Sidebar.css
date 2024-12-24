@@ -61,3 +61,8 @@
 .bottom-list {
   margin-top: auto; /* Pushes the list to the bottom */
 }
+@media (max-width: 768px){
+  .sidebar{
+    display: none;
+  }
+}
